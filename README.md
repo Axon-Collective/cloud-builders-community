@@ -5,6 +5,12 @@ This repository contains source code for community-contributed Docker images. Yo
 
 These are not official Google products.
 
+## Important Note!
+This repo has been modifiied for use with cloud build triggers. 
+For any cloudbuild.yaml file - a `dir: '<sub-directory-with-cloudbuild.yaml>` block is needed for every step in the cloudbuild file. 
+This tells cloudbuild to use that directory as the source. 
+This is needed because all automatic cloud builds are launced from the repository root. 
+
 ## How to use a community-contributed build step
 
 Google Cloud Build executes a build as a series of build steps. Each build step is run in a Docker container. See
