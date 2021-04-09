@@ -1,7 +1,6 @@
-ARG PY_VERSION=3.7
+ARG PY_VERSION=3.7.9
 FROM python:${PY_VERSION}
 
-RUN curl https://bootstrap.pypa.io/ez_setup.py -o - | python
-RUN pip install wheel twine yolk3k
+RUN pip install setuptools wheel twine yolk3k
 
 ENTRYPOINT ["/bin/sh"]
