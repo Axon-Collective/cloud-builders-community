@@ -20,12 +20,12 @@ steps:
 
   - name: 'gcr.io/cloud-builders/docker'
     id: 'Docker build for Python 3.7 (latest)'
-    dir: 'pypi-tools'
     args: [
       'build', '.',
       '--tag=gcr.io/$PROJECT_ID/pypi-tools:3.7',
       '--tag=gcr.io/$PROJECT_ID/pypi-tools:latest'
     ]
+    dir: 'pypi-tools'
 
 images: [
   # 'gcr.io/$PROJECT_ID/pypi-tools:2.7',
