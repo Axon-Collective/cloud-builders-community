@@ -1,7 +1,7 @@
 # In this directory, run the following command to build this builder.
 # $ gcloud builds submit . --config=cloudbuild.yaml
 substitutions:
-  _TERRAFORM_VERSION: 0.12.29
+  _TERRAFORM_VERSION: 0.12.31
   _TERRAFORM_VERSION_SHA256SUM: 872245d9c6302b24dc0d98a1e010aef1e4ef60865a2d1f60102c8ad03e9d5a1d
 steps:
 - name: 'gcr.io/cloud-builders/wget'
